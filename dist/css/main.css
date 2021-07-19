@@ -77,3 +77,55 @@ a {
 @media (max-width: 600px) {
   .hero-content__title {
     font-size: 3rem; } }
+
+.projects {
+  background: #2d2d43;
+  height: fit-content;
+  font-family: "Ubuntu", sans-serif; }
+  .projects__title {
+    text-align: center;
+    padding: 1rem 0;
+    color: #31e0ed;
+    font-size: 3rem; }
+
+.projects-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; }
+
+.card {
+  background: #1f1f2e;
+  padding: 2rem 1rem;
+  min-height: 20rem;
+  text-align: center; }
+  .card__title {
+    color: #31e0ed;
+    font-size: 1.8rem;
+    line-height: 2; }
+  .card__description {
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif; }
+
+.button {
+  display: inline-block;
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  border: 1px solid white; }
+  .button:hover {
+    transition: border 0.5s ease-in-out, color 0.5s ease-in-out;
+    color: #31e0ed;
+    border-color: #31e0ed; }
+
+@media (max-width: 600px) {
+  .projects-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem; }
+  .card {
+    padding: 1rem 0;
+    width: 100%; }
+    .card__title {
+      font-size: 1.7rem; } }

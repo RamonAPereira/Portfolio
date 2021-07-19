@@ -103,3 +103,69 @@ a {
     }
   }
 }
+
+//Projects
+.projects {
+  background: $medium-color;
+  height: fit-content;
+  font-family: "Ubuntu", sans-serif;
+
+  &__title {
+    text-align: center;
+    padding: 1rem 0;
+    color: $primary-color;
+    font-size: 3rem;
+  }
+}
+.projects-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.card {
+  background: $dark-color;
+  padding: 2rem 1rem;
+  min-height: 20rem;
+  text-align: center;
+
+  &__title {
+    color: $primary-color;
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+
+  &__description {
+    color: $light-color;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+  }
+}
+.button {
+  display: inline-block;
+  color: $light-color;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  border: 1px solid $light-color;
+
+  &:hover {
+    transition: border 0.5s ease-in-out, color 0.5s ease-in-out;
+    color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .card {
+    padding: 1rem 0;
+    width: 100%;
+    &__title {
+      font-size: 1.7rem;
+    }
+  }
+}
