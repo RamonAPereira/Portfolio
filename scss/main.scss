@@ -66,7 +66,8 @@ a {
 //Hero Section
 .hero-section {
   display: flex;
-  height: 100vh;
+  height: 90vh;
+  margin-top: 4.9rem;
   justify-content: center;
   align-items: center;
   background: $dark-color;
@@ -107,7 +108,7 @@ a {
 //Projects
 .projects {
   background: $medium-color;
-  height: fit-content;
+  min-height: 90vh;
   font-family: "Ubuntu", sans-serif;
 
   &__title {
@@ -127,11 +128,13 @@ a {
   padding: 2rem 1rem;
   min-height: 20rem;
   text-align: center;
+  margin-bottom: 1rem;
 
   &__title {
     color: $primary-color;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 2;
+    text-transform: capitalize;
   }
 
   &__description {
@@ -156,6 +159,13 @@ a {
   }
 }
 
+@media (max-width: 800px) {
+  .projects-cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 1rem;
+  }
+}
+
 @media (max-width: 600px) {
   .projects-cards {
     grid-template-columns: 1fr;
@@ -164,8 +174,58 @@ a {
   .card {
     padding: 1rem 0;
     width: 100%;
+  }
+}
+
+//Services
+.services {
+  background: $dark-color;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+
+  &__title {
+    text-align: center;
+    padding: 1rem 0;
+    color: $primary-color;
+    font-size: 3rem;
+  }
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service {
+  background: $medium-color;
+  padding: 2rem 0.5rem;
+  color: $light-color;
+
+  &__title {
+    color: $primary-color;
+    font-size: 1.7rem;
+    line-height: 2;
+  }
+}
+@media (max-width: 800px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 1rem;
+  }
+  .service {
     &__title {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .services {
+    padding: 1rem 0;
   }
 }

@@ -7,8 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c80f5c1776.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./dist/css/main.css">
-  <title>Document</title>
+  <title>Ramon Pereira</title>
 </head>
 <body>
   <header class="header">
@@ -16,9 +17,9 @@
       <nav>
         <ul class="nav-links">
           <li><a class="nav-links__link" href="#">Home</a></li>
-          <li><a class="nav-links__link" href="#">About Me</a></li>
+          <li><a class="nav-links__link" href="#projects">Projects</a></li>
           <li><a class="nav-links__link" href="#">Services</a></li>
-          <li><a class="nav-links__link" href="#">Projects</a></li>
+          <li><a class="nav-links__link" href="#">About Me</a></li>
           <li><a class="nav-links__link nav-links__link--border" href="#">Contact</a></li>
         </ul>
       </nav>
@@ -35,7 +36,7 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section id="projects" class="projects">
     <h2 class="projects__title">Projects</h2>
     <div class="inner-container">
       <div class="projects-cards">
@@ -62,6 +63,29 @@
           <h3 class="card__title">Testimonials component</h3>
           <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, magnam.</p>
           <a href="https://ramonapereira.github.io/testimonials-grid-section-main/" target="_blank" class="button">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2 class="services__title">Services</h2>
+    <div class="inner-container">
+      <div class="services-grid">
+        <div class="service">
+          <i class="fas fa-desktop fa-4x"></i>
+          <h3 class="service__title">Web Development</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, doloremque!</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-drafting-compass fa-4x"></i>
+          <h3 class="service__title"> UI | UX Design</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, doloremque!</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-mobile-alt fa-4x"></i>
+          <h3 class="service__title">Responsive Design</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, doloremque!</p>
         </div>
       </div>
     </div>
