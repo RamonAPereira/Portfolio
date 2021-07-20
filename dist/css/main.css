@@ -168,8 +168,8 @@ a {
     font-size: 1.6rem; } }
 
 @media (max-width: 600px) {
-  .projects-cards {
+  .services-grid {
     grid-template-columns: 1fr;
     gap: 1rem; }
-  .services {
+  .service {
     padding: 1rem 0; } }
