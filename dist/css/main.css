@@ -154,7 +154,8 @@ a {
 .service {
   background: #2d2d43;
   padding: 2rem 0.5rem;
-  color: white; }
+  color: white;
+  margin-bottom: 4rem; }
   .service__title {
     color: #31e0ed;
     font-size: 1.7rem;
@@ -173,3 +174,45 @@ a {
     gap: 1rem; }
   .service {
     padding: 1rem 0; } }
+
+.about {
+  background: #2d2d43;
+  font-family: "Ubuntu", sans-serif; }
+  .about__title {
+    text-align: center;
+    padding: 1rem 0;
+    color: #31e0ed;
+    font-size: 3rem; }
+
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  width: 70%;
+  margin: auto;
+  background: #1f1f2e; }
+  .flex-container > * {
+    width: 40vw;
+    padding: 1rem; }
+
+.about-description {
+  color: white; }
+  .about-description__title {
+    color: #31e0ed;
+    font-size: 1.7rem; }
+  .about-description__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-family: "Roboto", sans-serif; }
+  .about-description__p {
+    margin-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    text-align: justify; }
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center; }
+    .flex-container > * {
+      width: 90vw; } }

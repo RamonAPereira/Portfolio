@@ -201,6 +201,7 @@ a {
   background: $medium-color;
   padding: 2rem 0.5rem;
   color: $light-color;
+  margin-bottom: 4rem;
 
   &__title {
     color: $primary-color;
@@ -227,5 +228,63 @@ a {
   }
   .service {
     padding: 1rem 0;
+  }
+}
+
+//About Me Section
+.about {
+  background: $medium-color;
+  font-family: "Ubuntu", sans-serif;
+
+  &__title {
+    text-align: center;
+    padding: 1rem 0;
+    color: $primary-color;
+    font-size: 3rem;
+  }
+}
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  width: 70%;
+  margin: auto;
+  background: $dark-color;
+
+  & > * {
+    width: 40vw;
+    padding: 1rem;
+  }
+}
+.about-description {
+  color: $light-color;
+
+  &__title {
+    color: $primary-color;
+    font-size: 1.7rem;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  &__p {
+    margin-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      width: 90vw;
+    }
   }
 }
